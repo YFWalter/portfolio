@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+    
 }
 
 .header__container {
@@ -39,7 +39,7 @@ header {
 }
 
     /* =================== ME ============== */
-.me {
+/* .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
     height: 30rem;
@@ -49,6 +49,30 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+} */
+
+.me {
+    left: calc(50% - 10rem);
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    display: grid;
+    place-items: center;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.me-image {
+    object-fit: cover;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(0);
+    
+    
+}
+
+.me-image:hover {
+    transform: rotate(10deg);
+    transition: var(--transition);
 }
 
 /* =================== SCROLL BAR ============== */
@@ -64,14 +88,29 @@ header {
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES)================== */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 70vh;
     }
+
+    .me-image {
+        width: 100%;
+    }
+
 }
 
 /* ======================= MEDIA QUERIES (SMALL DEVICES)================== */
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+    }
+
+    .me {
+        position: relative;
+        height: 100%;
+    }
+
+    .me-image {
+        position: absolute;
+        margin-bottom: 5rem;
     }
 
     .header__socials, 

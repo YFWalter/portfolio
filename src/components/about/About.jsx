@@ -12,11 +12,6 @@ export const About = () => {
       <h2>Sobre Mi</h2>
 
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="sobre mi"/>
-          </div>
-        </div>
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
@@ -39,7 +34,7 @@ export const About = () => {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eos natus impedit iure ab. Explicabo ipsa incidunt veniam soluta voluptates. Unde praesentium laboriosam repudiandae sequi, maxime incidunt illo aut eveniet?
+            Hola mi nombre es Walter Yañez, soy desarrollador web, actualmente me encuentro realizando proyectos personales para seguir sumando conocimiento. Tengo experiencia con los frameworks Laravel, Vue.js y React. Me gusta estar en constante aprendizaje, prestando atención en los detalles para crear algo que sea vea bonito y que este bien desarrollado. Tengo un perfil en <a href="https://linkedin.com/in/walteryañez">Linkedin</a> te invito a que lo veas.
           </p>
           <a href='#contact' className='btn btn-primary'>Escribeme</a>
         </div>

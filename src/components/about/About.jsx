@@ -13,7 +13,7 @@ export const About = () => {
 
       <div className="container about__container">
         <div className="about__content">
-          <div className="about__cards">
+          {/* <div className="about__cards">
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
@@ -31,7 +31,7 @@ export const About = () => {
               <h5>Proyects</h5>
               <small>80 Completados</small>
             </article>
-          </div>
+          </div> */}
 
           <p>
             Hola mi nombre es Walter Yañez, soy desarrollador web, actualmente me encuentro realizando proyectos personales para seguir sumando conocimiento. Tengo experiencia con los frameworks Laravel, Vue.js y React. Me gusta estar en constante aprendizaje, prestando atención en los detalles para crear algo que sea vea bonito y que este bien desarrollado. Tengo un perfil en <a href="https://linkedin.com/in/walteryañez">Linkedin</a> te invito a que lo veas.

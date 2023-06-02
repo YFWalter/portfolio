@@ -11,7 +11,7 @@ import Footer from './components/footer/Footer'
 export const App = () => {
   return (
     <>
-      <Particle/>
+      {/* <Particle/> */}
       <Header />
       <Nav />
       <About />

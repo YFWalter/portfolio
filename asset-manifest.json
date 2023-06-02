@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6c798edc.css",
-    "main.js": "/portfolio/static/js/main.ac7086be.js",
+    "main.css": "/portfolio/static/css/main.66360da9.css",
+    "main.js": "/portfolio/static/js/main.7664db9c.js",
     "static/media/me-about.jpg": "/portfolio/static/media/me-about.9f1478ba45aa1f82dfad.jpg",
     "static/media/Walter-Yañez-CV.pdf": "/portfolio/static/media/Walter-Yañez-CV.c6be67eca869491d53ef.pdf",
     "static/media/portfolio1.jpg": "/portfolio/static/media/portfolio1.f5e72352e5aa840702b8.jpg",
     "index.html": "/portfolio/index.html",
-    "main.6c798edc.css.map": "/portfolio/static/css/main.6c798edc.css.map",
-    "main.ac7086be.js.map": "/portfolio/static/js/main.ac7086be.js.map"
+    "main.66360da9.css.map": "/portfolio/static/css/main.66360da9.css.map",
+    "main.7664db9c.js.map": "/portfolio/static/js/main.7664db9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c798edc.css",
-    "static/js/main.ac7086be.js"
+    "static/css/main.66360da9.css",
+    "static/js/main.7664db9c.js"
   ]
 }

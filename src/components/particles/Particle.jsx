@@ -3,6 +3,7 @@ import { loadFull } from 'tsparticles'
 import particlesConfig from '../../config/configParticles.json';
 
 import React from 'react'
+import './particle.css'
 
 function Particle() {
     const particlesInit = async (main) => {
@@ -18,6 +19,7 @@ function Particle() {
 
     return (
         <Particles
+            className='particles'
             id='tsparticles'
             init={particlesInit}
             loaded={particlesLoaded}

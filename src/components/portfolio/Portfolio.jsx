@@ -13,38 +13,17 @@ const data = [
   {
     id: 2,
     image: IMG1,
-    title: 'Titulo 1',
+    title: 'Titulo 2',
     github:'https://github.com',
     demo: 'https://google.com.ar'
   },
   {
     id: 3,
     image: IMG1,
-    title: 'Titulo 1',
+    title: 'Titulo 3',
     github:'https://github.com',
     demo: 'https://google.com.ar'
   },
-  {
-    id: 4,
-    image: IMG1,
-    title: 'Titulo 1',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: 'Titulo 1',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
-  },
-  {
-    id: 6,
-    image: IMG1,
-    title: 'Titulo 1',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
-  }
 ]
 
 const Portfolio = () => {

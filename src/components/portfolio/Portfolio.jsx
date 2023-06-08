@@ -1,28 +1,14 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/card-product.jpeg'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Titulo 1',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
-  },
-  {
-    id: 2,
-    image: IMG1,
-    title: 'Titulo 2',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
-  },
-  {
-    id: 3,
-    image: IMG1,
-    title: 'Titulo 3',
-    github:'https://github.com',
-    demo: 'https://google.com.ar'
+    title: 'Card Product',
+    github:'https://github.com/YFWalter/cards-product.io',
+    demo: 'https://yfwalter.github.io/cards-product.io/'
   },
 ]
 

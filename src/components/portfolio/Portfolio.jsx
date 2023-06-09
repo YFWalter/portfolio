@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/card-product.jpeg'
+import IMG2 from '../../assets/cards-filter.jpeg'
 
 const data = [
   {
@@ -9,6 +10,13 @@ const data = [
     title: 'Card Product',
     github:'https://github.com/YFWalter/cards-product.io',
     demo: 'https://yfwalter.github.io/cards-product.io/'
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Cards Filter',
+    github:'https://github.com/YFWalter/cards-filter.io',
+    demo: 'https://yfwalter.github.io/cards-filter.io/'
   },
 ]
 
@@ -24,7 +32,7 @@ const Portfolio = () => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title}></img>
+                  <img className='portfolio__image' src={image} alt={title}></img>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">

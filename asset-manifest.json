@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9cecd946.css",
-    "main.js": "/portfolio/static/js/main.232bd22b.js",
+    "main.css": "/portfolio/static/css/main.dfaa3d69.css",
+    "main.js": "/portfolio/static/js/main.b22c38bd.js",
     "static/media/me-about.jpg": "/portfolio/static/media/me-about.9f1478ba45aa1f82dfad.jpg",
     "static/media/cards-filter.jpeg": "/portfolio/static/media/cards-filter.3ff1aefcb3a673b58894.jpeg",
-    "static/media/Walter-Yañez-CV.pdf": "/portfolio/static/media/Walter-Yañez-CV.c6be67eca869491d53ef.pdf",
+    "static/media/Curriculum-Walter-Yanez.pdf": "/portfolio/static/media/Curriculum-Walter-Yanez.27a17a004adf07f70a72.pdf",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.bde6f53c0c559f97e49b.jpg",
     "static/media/card-product.jpeg": "/portfolio/static/media/card-product.362d9be11e47c4557e90.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.9cecd946.css.map": "/portfolio/static/css/main.9cecd946.css.map",
-    "main.232bd22b.js.map": "/portfolio/static/js/main.232bd22b.js.map"
+    "main.dfaa3d69.css.map": "/portfolio/static/css/main.dfaa3d69.css.map",
+    "main.b22c38bd.js.map": "/portfolio/static/js/main.b22c38bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cecd946.css",
-    "static/js/main.232bd22b.js"
+    "static/css/main.dfaa3d69.css",
+    "static/js/main.b22c38bd.js"
   ]
 }

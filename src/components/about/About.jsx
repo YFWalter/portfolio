@@ -34,7 +34,7 @@ export const About = () => {
           </div> */}
 
           <p>
-            Hola mi nombre es Walter Yañez, soy desarrollador web, actualmente me encuentro realizando proyectos personales para seguir sumando conocimiento. Tengo experiencia con los frameworks Laravel, Vue.js y React. Me gusta estar en constante aprendizaje, prestando atención en los detalles para crear algo que sea vea bonito y que este bien desarrollado. Tengo un perfil en <a href="https://linkedin.com/in/walteryañez">Linkedin</a> te invito a que lo veas.
+            Hola, mi nombre es Walter Yañez y soy desarrollador web con más de 2 años de experiencia. Me especializo en el uso de Laravel para el desarrollo backend y en JavaScript para la creación de interfaces dinámicas, con conocimientos en frameworks como Vue.js y React. Me apasiona desarrollar soluciones eficientes y escalables, prestando atención a los detalles para crear proyectos bien diseñados y funcionales. Actualmente, sigo trabajando en proyectos personales para ampliar mis habilidades y mantenerme en constante aprendizaje. Te invito a visitar mi perfil en <a href="https://linkedin.com/in/walteryañez">LinkedIn</a>.
           </p>
           <a href='#contact' className='btn btn-primary'>Escribeme</a>
         </div>

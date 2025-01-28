@@ -1,13 +1,12 @@
 header {
     height: 100vh;
     padding-top: 7rem;
-    
+    /* margin-bottom: 5rem; */
 }
 
 .header__container {
     text-align: center;
     height: 100%;
-    position: relative;
 }
 
 /* =================== CTA ============== */
@@ -27,7 +26,7 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
+    /* left: 0; */
     bottom: 3rem;
 }
 
@@ -52,8 +51,9 @@ header {
 } */
 
 .me {
-    left: calc(50% - 10rem);
-    position: absolute;
+    position: relative;
+    left: auto;
+    margin: 0 auto;
     width: 20rem;
     height: 25rem;
     display: grid;
@@ -61,24 +61,45 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+
+/* .me {
+    left: calc(50% - 10rem);
+    position: flex;
+    width: 20rem;
+    height: 25rem;
+    display: grid;
+    place-items: center;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+} */
+
+
+
 .me-image {
     object-fit: cover;
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(0);
-    
-    
 }
+
 
 .me-image:hover {
     transform: rotate(10deg);
     transition: var(--transition);
 }
 
+.me img {
+    width: 100%;
+    max-width: 200px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover;
+    border-radius: 20px; /* Para mantener el estilo */
+}
+
+
 /* =================== SCROLL BAR ============== */
 .scroll__down {
     position: absolute;
-    right: -2.3rem;
+    right: 4rem;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
@@ -91,16 +112,16 @@ header {
         height: 70vh;
     }
 
-    .me-image {
+    /* .me-image {
         width: 100%;
-    }
+    } */
 
 }
 
 /* ======================= MEDIA QUERIES (SMALL DEVICES)================== */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 80vh;
     }
 
     .me {
@@ -117,4 +138,6 @@ header {
     .scroll__down{
         display: none;
     }
+
+    
 }

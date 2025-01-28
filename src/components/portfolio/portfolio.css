@@ -22,11 +22,11 @@
     overflow: hidden;
 }
 
-.portfolio__image {
+/* .portfolio__image {
     height: 200px;
     width: 300px;
     object-fit: cover;
-}
+} */
 
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
@@ -52,4 +52,9 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    /* .me-image {
+        max-width: 200px; 
+    } 
+    */
 }

@@ -1,6 +1,7 @@
 header {
     height: 100vh;
     padding-top: 7rem;
+    position: relative;
     /* margin-bottom: 5rem; */
 }
 
@@ -30,7 +31,7 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    /* left: 0; */
+    left: 2rem;
     bottom: 3rem;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/sh360.jpg'
+import IMG2 from '../../assets/arcana.jpg'
 
 const data = [
   {
@@ -9,6 +10,14 @@ const data = [
     title: 'SH 360 - Seguridad e Higiene',
     description: 'Sitio web institucional para una consultora de seguridad e higiene industrial. Diseño responsive, presentación de servicios y formulario de contacto.',
     url: 'https://sh360.solutions/',
+    github: null,
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Arcana Studio',
+    description: 'Sitio web para un estudio de diseño gráfico y branding. Desarrollado con Next.js, diseño elegante y responsive, con formulario de contacto.',
+    url: 'https://arcanastudiobb.com/',
     github: null,
   },
 ]

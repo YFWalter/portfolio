@@ -1,22 +1,15 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/card-product.jpeg'
-import IMG2 from '../../assets/cards-filter.jpeg'
+import IMG1 from '../../assets/sh360.jpg'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Card Product',
-    github:'https://github.com/YFWalter/cards-product.io',
-    demo: 'https://yfwalter.github.io/cards-product.io/'
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: 'Cards Filter',
-    github:'https://github.com/YFWalter/cards-filter.io',
-    demo: 'https://yfwalter.github.io/cards-filter.io/'
+    title: 'SH 360 - Seguridad e Higiene',
+    description: 'Sitio web institucional para una consultora de seguridad e higiene industrial. Diseño responsive, presentación de servicios y formulario de contacto.',
+    url: 'https://sh360.solutions/',
+    github: null,
   },
 ]
 
@@ -28,16 +21,19 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, description, url, github}) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
                   <img className='portfolio__image' src={image} alt={title}></img>
                 </div>
                 <h3>{title}</h3>
+                {description && <p className='portfolio__item-description'>{description}</p>}
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  {github && (
+                    <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
+                  )}
+                  <a href={url} className='btn btn-primary' target='_blank' rel='noreferrer'>Visitar sitio</a>
                 </div>
               </article>
             )

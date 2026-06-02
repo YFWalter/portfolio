@@ -65,8 +65,49 @@
 }
 
 .about__content p {
-    margin: 2rem 0 2.6rem;
+    margin: 2rem 0;
     color: var(--color-light);
+}
+
+/* =================== SKILLS ============== */
+.about__skills {
+    margin-bottom: 2.6rem;
+}
+
+.about__skills h4 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.about__skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.about__skill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-bg-variant);
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.about__skill:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.about__skill-icon {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.about__skill span {
+    font-size: 0.9rem;
 }
 
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES)================== */

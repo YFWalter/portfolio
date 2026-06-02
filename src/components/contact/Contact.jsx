@@ -2,21 +2,24 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineMail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
-import {useRef} from 'react'
+import {useRef, useState} from 'react'
 import emailjs from 'emailjs-com'
 const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState(null); // 'sending' | 'success' | 'error'
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setStatus('sending');
 
     emailjs.sendForm('service_9pcj48s', 'template_43xt58c', form.current, 'uFGuD_BsRk9SwMtrb')
-      .then((result) => {
-          console.log(result.text);
+      .then(() => {
+          setStatus('success');
+          e.target.reset();
       }, (error) => {
-          console.log(error.text);
+          console.error(error.text);
+          setStatus('error');
       });
-      e.target.reset();
   };
   return (
     <section id='contact'>
@@ -35,15 +38,28 @@ const Contact = () => {
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+54 9 291 4702712</h5>
-            <a href='https://api.whatsapp.com/send?phone=2914702712'>Enviar Mensaje</a>
+            <a href='https://api.whatsapp.com/send?phone=2914702712' target='_blank' rel='noreferrer'>Enviar Mensaje</a>
           </article>
         </div>
         {/** END OF CONTACT OPTIONS */}
-        <form ref={form} onSubmit={sendEmail}> 
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Nombre completo' required />
           <input type="email" name='email' placeholder='Correo electronico' required />
           <textarea name="message" rows="7" placeholder='Escriba un mensaje..' required></textarea>
-          <button type='submit' className='btn btn-primary'>Enviar Mensaje</button>
+          <button type='submit' className='btn btn-primary' disabled={status === 'sending'}>
+            {status === 'sending' ? 'Enviando...' : 'Enviar Mensaje'}
+          </button>
+
+          {status === 'success' && (
+            <p className='contact__message contact__message--success'>
+              ¡Mensaje enviado! Te responderé a la brevedad.
+            </p>
+          )}
+          {status === 'error' && (
+            <p className='contact__message contact__message--error'>
+              Hubo un error al enviar el mensaje. Probá de nuevo o escribime por email.
+            </p>
+          )}
         </form>
       </div>
     </section>

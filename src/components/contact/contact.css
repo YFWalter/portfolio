@@ -69,3 +69,27 @@ textarea {
         width: var( --container-width-sm);
     }
 }
+/* =================== FORM STATUS MESSAGE ============== */
+.contact__message {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.contact__message--success {
+    background: rgba(45, 197, 153, 0.15);
+    border: 1px solid #2dc599;
+    color: #2dc599;
+}
+
+.contact__message--error {
+    background: rgba(231, 76, 60, 0.15);
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

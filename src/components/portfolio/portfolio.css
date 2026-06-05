@@ -18,6 +18,24 @@
     background: transparent;
 }
 
+.portfolio__item-bar {
+    display: flex;
+    gap: 0.45rem;
+    align-items: center;
+    padding: 0.2rem 0.4rem 0.9rem;
+}
+
+.portfolio__item-bar span {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.portfolio__item-bar span:nth-child(1) { background: #ff5f56; }
+.portfolio__item-bar span:nth-child(2) { background: #ffbd2e; }
+.portfolio__item-bar span:nth-child(3) { background: #27c93f; }
+
 .portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;

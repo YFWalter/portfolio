@@ -28,7 +28,7 @@ export const About = () => {
             </div>
           </div>
 
-          <a href='#contact' className='btn btn-primary'>Escribeme</a>
+          <a href='#contact' className='btn btn-primary'>Escríbeme</a>
         </div>
       </div>
     </section>

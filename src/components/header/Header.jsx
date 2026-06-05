@@ -15,7 +15,11 @@ const Header = () => {
         <CodeIntro />
         <HeaderSocials/>
 
-        <a href="#contact" className='scroll__down'>Scroll Down</a>
+        <a href="#about" className='scroll__down' aria-label="Bajar">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </a>
       </div>
     </header>
   )

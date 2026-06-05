@@ -115,11 +115,16 @@ header {
 /* =================== SCROLL BAR ============== */
 .scroll__down {
     position: absolute;
-    right: 4rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+    left: 50%;
+    bottom: 1.6rem;
+    color: var(--color-primary);
+    display: flex;
+    animation: scroll-bounce 1.8s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50%      { transform: translate(-50%, 0.5rem); }
 }
 
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES)================== */

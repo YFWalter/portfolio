@@ -43,9 +43,9 @@ const Contact = () => {
         </div>
         {/** END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Nombre completo' required />
-          <input type="email" name='email' placeholder='Correo electronico' required />
-          <textarea name="message" rows="7" placeholder='Escriba un mensaje..' required></textarea>
+          <input type="text" name='name' placeholder='> nombre completo' required />
+          <input type="email" name='email' placeholder='> correo electrónico' required />
+          <textarea name="message" rows="7" placeholder='> escribí tu mensaje...' required></textarea>
           <button type='submit' className='btn btn-primary' disabled={status === 'sending'}>
             {status === 'sending' ? 'Enviando...' : 'Enviar Mensaje'}
           </button>

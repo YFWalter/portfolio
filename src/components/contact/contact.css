@@ -44,15 +44,30 @@ form {
     gap: 1.2rem;
 }
 
-input, 
+input,
 textarea {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem 1.1rem;
     border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    background: var(--color-bg-variant);
+    border: 1px solid var(--color-border);
     resize: none;
     color: var(--color-white);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(232, 245, 238, 0.35);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-variant);
+    background: rgba(62, 245, 143, 0.04);
 }
 
 /* ======================= MEDIA QUERIES (MEDIUM DEVICES)================== */

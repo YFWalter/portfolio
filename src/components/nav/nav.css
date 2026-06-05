@@ -12,6 +12,18 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    border: 1px solid var(--color-border);
+    transition: opacity 400ms ease, transform 400ms ease;
+}
+
+nav.nav--hidden {
+    opacity: 0;
+    transform: translate(-50%, 2rem);
+    pointer-events: none;
+}
+
+nav.nav--visible {
+    opacity: 1;
 }
 
 nav a{

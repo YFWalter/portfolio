@@ -25,7 +25,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'MiAgenda',
-    description: 'Sistema de reserva de citas online para salones de belleza, hecho con Laravel. Los clientes eligen servicio, profesional y horario disponible, con roles de acceso (cliente, personal y administrador).',
+    description: 'Sistema de turnos online hecho con Laravel. Los clientes eligen servicio, profesional y horario disponible, con roles de acceso (cliente, personal y administrador).',
     url: 'https://mediumseagreen-badger-164115.hostingersite.com/',
     urlLabel: 'Ver demo',
     github: 'https://github.com/YFWalter/agenda',

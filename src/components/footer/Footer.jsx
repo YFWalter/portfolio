@@ -6,12 +6,11 @@ import {FaGithub} from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer>
-      <a href='#header' className='footer__logo'>GUALI</a>
+      <a href='#header' className='footer__logo'>Walter Yañez</a>
 
       <ul className='permalinks'>
-        <li><a href='#header'>Home</a></li>
-        <li><a href='#about'>Sobre mi</a></li>
-        <li><a href='#experience'>Experiencia</a></li>
+        <li><a href='#header'>Inicio</a></li>
+        <li><a href='#about'>Sobre mí</a></li>
         <li><a href='#portfolio'>Portfolio</a></li>
         <li><a href='#contact'>Contacto</a></li>
       </ul>
@@ -22,7 +21,7 @@ const Footer = () => {
       </div>
 
       <div className='footer__copyright'>
-        <small>&copy; Guali.Todos los derechos reservados.</small>
+        <small>&copy; 2026 Walter Yañez. Todos los derechos reservados.</small>
       </div>
     </footer>
 

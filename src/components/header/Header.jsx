@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
+import CodeIntro from './CodeIntro'
 import HeaderSocials from './Headersocials'
 
 const Header = () => {
@@ -11,6 +12,7 @@ const Header = () => {
         <h1>Walter Yañez</h1>
         <h5 className="text-light">Desarrollador Web</h5>
         <CTA />
+        <CodeIntro />
         <HeaderSocials/>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>

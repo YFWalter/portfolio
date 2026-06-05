@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/sh360.jpg'
 import IMG2 from '../../assets/arcana.jpg'
+import IMG3 from '../../assets/agenda.jpg'
 
 const data = [
   {
@@ -20,6 +21,15 @@ const data = [
     url: 'https://arcanastudiobb.com/',
     github: null,
   },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'MiAgenda',
+    description: 'Sistema de reserva de citas online para salones de belleza, hecho con Laravel. Los clientes eligen servicio, profesional y horario disponible, con roles de acceso (cliente, personal y administrador).',
+    url: 'https://mediumseagreen-badger-164115.hostingersite.com/',
+    urlLabel: 'Ver demo',
+    github: 'https://github.com/YFWalter/agenda',
+  },
 ]
 
 const Portfolio = () => {
@@ -30,7 +40,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, description, url, github}) => {
+          data.map(({id, image, title, description, url, urlLabel, github}) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
@@ -42,7 +52,7 @@ const Portfolio = () => {
                   {github && (
                     <a href={github} className='btn' target='_blank' rel='noreferrer'>Github</a>
                   )}
-                  <a href={url} className='btn btn-primary' target='_blank' rel='noreferrer'>Visitar sitio</a>
+                  <a href={url} className='btn btn-primary' target='_blank' rel='noreferrer'>{urlLabel || 'Visitar sitio'}</a>
                 </div>
               </article>
             )

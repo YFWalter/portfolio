@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9ed00c9c.css",
-    "main.js": "/portfolio/static/js/main.016eda23.js",
+    "main.css": "/portfolio/static/css/main.0b441caf.css",
+    "main.js": "/portfolio/static/js/main.05ceb2af.js",
     "static/media/agenda.jpg": "/portfolio/static/media/agenda.d529f1286d16dcc782e8.jpg",
     "static/media/sh360.jpg": "/portfolio/static/media/sh360.76ebf7ff7d7fea2ff2d0.jpg",
     "static/media/Curriculum-Walter-Yanez.pdf": "/portfolio/static/media/Curriculum-Walter-Yanez.27a17a004adf07f70a72.pdf",
     "static/media/arcana.jpg": "/portfolio/static/media/arcana.6383c88df7a9fe8274b4.jpg",
     "index.html": "/portfolio/index.html",
-    "main.9ed00c9c.css.map": "/portfolio/static/css/main.9ed00c9c.css.map",
-    "main.016eda23.js.map": "/portfolio/static/js/main.016eda23.js.map"
+    "main.0b441caf.css.map": "/portfolio/static/css/main.0b441caf.css.map",
+    "main.05ceb2af.js.map": "/portfolio/static/js/main.05ceb2af.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ed00c9c.css",
-    "static/js/main.016eda23.js"
+    "static/css/main.0b441caf.css",
+    "static/js/main.05ceb2af.js"
   ]
 }

@@ -17,6 +17,35 @@ const Nav = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Scrollspy: marca como activa la sección que está en el centro de la pantalla
+  useEffect(() => {
+    const sections = [
+      { id: 'header', key: '#' },
+      { id: 'about', key: '#about' },
+      { id: 'portfolio', key: '#portfolio' },
+      { id: 'contact', key: '#contact' },
+    ];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const match = sections.find((s) => s.id === entry.target.id);
+            if (match) setActiveNav(match.key);
+          }
+        });
+      },
+      { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+    );
+
+    sections.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <nav className={visible ? 'nav--visible' : 'nav--hidden'}>
       <a href="#header"

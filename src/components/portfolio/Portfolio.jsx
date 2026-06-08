@@ -3,6 +3,7 @@ import './portfolio.css'
 import IMG1 from '../../assets/sh360.jpg'
 import IMG2 from '../../assets/arcana.jpg'
 import IMG3 from '../../assets/agenda.jpg'
+import IMG4 from '../../assets/divigastos.jpg'
 
 const data = [
   {
@@ -29,6 +30,15 @@ const data = [
     url: 'https://mediumseagreen-badger-164115.hostingersite.com/',
     urlLabel: 'Ver demo',
     github: 'https://github.com/YFWalter/agenda',
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'DiviGastos',
+    description: 'Sistema de gastos compartidos hecho con Laravel. Permite registrar compras en cuotas, dividirlas entre varias personas y llevar el seguimiento de los pagos mes a mes.',
+    url: 'https://lightcoral-goose-780379.hostingersite.com/login',
+    urlLabel: 'Ver demo',
+    github: 'https://github.com/YFWalter/gastos-compartidos',
   },
 ]
 

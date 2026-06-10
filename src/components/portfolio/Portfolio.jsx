@@ -4,6 +4,7 @@ import IMG1 from '../../assets/sh360.jpg'
 import IMG2 from '../../assets/arcana.jpg'
 import IMG3 from '../../assets/agenda.jpg'
 import IMG4 from '../../assets/divigastos.jpg'
+import IMG5 from '../../assets/whatsapp-sender.jpg'
 
 const data = [
   {
@@ -39,6 +40,15 @@ const data = [
     url: 'https://lightcoral-goose-780379.hostingersite.com/login',
     urlLabel: 'Ver demo',
     github: 'https://github.com/YFWalter/gastos-compartidos',
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'WhatsApp Sender',
+    description: 'API en Python para enviar mensajes de WhatsApp masivos a partir de una planilla de Excel, con control anti-bloqueo (delays y pausas) y reporte de estado de cada envío.',
+    url: 'https://whatsapp-sender-kuctn9crr4umpac4pxbevo.streamlit.app/',
+    urlLabel: 'Ver demo',
+    github: null,
   },
 ]
 
